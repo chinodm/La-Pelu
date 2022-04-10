@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* mobile index */
+@media only screen and (min-width:320px) {
+    .contenedor1 {
+    width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 70vh 81vh 6vh;
+	grid-template-areas: "header" "main" "footer";
+}
+}
+
+@media only screen and (min-width:768px) {
+    .contentedor1{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;	
+        grid-template-areas: 
+        "header header"
+        "main main" 
+        "footer footer";
+    }
+
+
+
+    #header.pelu-container{
+        padding: 1rem;
+			position: sticky;
+			top: 0;
+			display:  flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+    }
+
+    }
+
+        /* media querie 1 index 1024 3columnas y 4 filas*/
+
+@media only screen and (min-width:1024px) {
+	.contentedor1{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 60vw 40vw;
+	grid-template-rows: 15vh 67vh 42vh 40vh 20vh ;
+	grid-template-areas: "header header" "main " 
+	"footer footer";
+	}
+
+    #main.fotofoto {
+    height: 10rem;
+    width: 50%;
+    }
+
+    }
+
+
+
+
+#header{
+	grid-area: header;	
+}
+
+
+#main{
+	grid-area: main;
+}
+
+#footer{
+			grid-area: footer;
+}
+
+
+body {
+    background-image: url("../imagenes/pelu2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pelu-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width:90%;
+    height:9rem;
+    background-color: whitesmoke;
+}
+
+.Logo{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.fotofoto {
+    width: 80%;
+    margin: 5;
+}
+
+.logo-img{
+    width:5rem;
+}
+
+.nav-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    justify-content: flex-end;
+    width: 70%;
+}
+h1 {
+    font-size: x-large;
+    color: darkblue;
+    font-weight: bold;
+    display: inline;
+    
+}
+
+
+.menu-container{
+    width:60%;
+    margin-left: -8rem;
+}
+
+.menu {
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    float: inline-end;
+    list-style: none;
+}
+
+.menu a{
+    color: rgb(230, 90, 230); 
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.active {
+    color: purple !important;
+}
+
+.ubicacion{
+    width: 80%;
+}
+#redes {
+    height: auto;
+    width: 40%;
+    max-height: 50px;
+    max-width: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+
+}
+
+
+
