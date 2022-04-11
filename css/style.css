@@ -12,7 +12,7 @@
     width: 100%;
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: 70vh 81vh 6vh;
+	grid-template-rows: 70vh 81vh -1vh;
 	grid-template-areas: "header" "main" "footer";
 }
 }
@@ -75,17 +75,29 @@
 }
 
 #footer{
-			grid-area: footer;
+		grid-area: footer;
 }
 
-
-body {
-    background-image: url("../imagenes/pelu2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+/* Modificacion Background */
+body{
+    background-size: 500%;
+    background-image: linear-gradient(135deg, #800080,#ffc0cb );
+    background-size: 500%;
+    animation: fondoanimado 12s infinite;
+    -webkit-animation: fondoanimado 12s infinite;
 }
 
+@keyframes fondoanimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {background-position: 100% 50%;
+
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
 .pelu-container{
     display:flex;
     flex-direction: column;
