@@ -80,7 +80,7 @@
 
 
 body {
-    background-image: url("../imagenes/pelu2.jpg");
+    background-image: linear-gradient(130deg, #833ab4 #fd1d1d #fcb045 );
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
